@@ -1,0 +1,23 @@
+<!--
+  @description       : Shopping Display Component for holding information about of each of the store items
+  @author            : Ben Learn
+  @group             : 
+  @last modified on  : 03-11-2022
+  @last modified by  : Clifford Johnson
+-->
+<template>
+  <div class="slds-box" style="height:300px;display:block;text-align:center">
+    <b>{itemTitle}</b>
+    <br>
+    <br>
+    <img src={itemImgUrl} style="max-height:125px;max-width:125px">
+    <br>
+    <div class="slds-grid slds-gutters slds-align_absolute-center">
+      <div class="slds-col"><lightning-button label="-" onclick={handleMinus}></lightning-button></div>
+      <div class="slds-col"><p>{itemQuantity}</p></div>
+      <div class="slds-col"><lightning-button label="+" onclick={handlePlus}></lightning-button></div>
+    </div>
+    <br>
+    <lightning-button label="Submit" onclick={handleSubmit} variant="Success"></lightning-button>
+  </div>
+</template>

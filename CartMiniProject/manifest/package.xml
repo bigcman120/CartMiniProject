@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Home_Page_Default</members>
+        <name>FlexiPage</name>
+    </types>
+
+    <types>
+        <members>rewardCard</members>
+        <members>rewardShopContainer</members>
+        <name>LightningComponentBundle</name>
+    </types>
+
+    <types>
+        <members>black_hat</members>
+        <members>black_shirt</members>
+        <members>bound_notebook</members>
+        <members>carabiner</members>
+        <members>drawstring_bag</members>
+        <members>gray_hat</members>
+        <members>gray_shirt</members>
+        <members>koozie</members>
+        <members>mug</members>
+        <members>pen</members>
+        <members>powerbank</members>
+        <members>stickers</members>
+        <members>sticky_notepad</members>
+        <members>stress_ball</members>
+        <name>StaticResource</name>
+    </types>
+    <version>52.0</version>
+</Package>

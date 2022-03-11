@@ -1,0 +1,19 @@
+<!--
+  @description       : Exposed Component that collects and displays all of the store items as a grid of cards
+  @author            : Ben Learn
+  @group             : 
+  @last modified on  : 03-10-2022
+  @last modified by  : Clifford Johnson
+-->
+<template>
+    <div class="slds-box slds-theme_default">
+        <lightning-layout multiple-rows horizontal-align="spread">
+            <template for:each={rewards} for:item="reward">
+                <lightning-layout-item size="4" padding="around-small" key={reward.title}>
+                    <c-reward-card item-img-url={reward.url} item-title={reward.title} oncheckout={handleSubmission}></c-reward-card>
+                </lightning-layout-item>
+            </template>
+        </lightning-layout>
+        <c-reward-cart cart-quantity={selectedQuantity} cart-item={selectedTitle} cart-url={selectedLink}></c-reward-cart>
+    </div>
+</template>
